@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Zarkov</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!--! === HEADER === -->
+    <header class="header">
+
+        <nav class="navbar container">
+            <a href="./index.html" class="navbar__logo">
+                <img src="#" alt="" class="navbar__logo-image">
+            </a>
+
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item">
+                        <a href="#home" class="navbar__list-link">Home</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#aboutme" class="navbar__list-link">About Me</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#portfolio" class="navbar__list-link">Portfolio</a>
+                    </li>
+                    <li class="navbar__list-item">
+                        <a href="#resume" class="navbar__list-link">Resume</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar__btn-group">
+                <a href="mailto:mzark075@uottawa.ca" class="btn btn--text btn--transparent">Contact Me</a>
+                <button type="button" class="btn btn--action" id="menu-toggler">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <!--! === MAIN === -->
+    <main>
+        <!--! === SHOWCASE === -->
+        <section class="showcase" id="home">
+            <div class="showcase__container container">
+                <h1 class="showcase__title title title--main">Hello, I'm Martin Zarkov, a software engineering student.</h1>
+                <picture class="showcase__image">
+                    <source media="(min-width: 768px)" srcset="./assets/images/martin2-modified.png">
+                    <img src="./assets/images/martin2_sm-modified.png" alt="">
+                </picture>
+            </div>
+        </section>
+
+         <!--! === ABOUT === -->
+         <section class="about" id="aboutme">
+            <div class="about__container container">
+                <div class="about__information">
+                    <h2 class="about__information-title title">About Me</h2>
+                    <p class="about__information-description">Hello, I'm Martin! I am a software engineering student at the University of Ottawa. I'm a tech geek who loves to collaborate with others to solve difficult and impactful problems. Such problems can be broken down to smaller pieces and translated into code and I like to think of code as a piece of a puzzle. Whenever all pieces are put together it forms a beautiful picture that everyone can enjoy. This is the reason why software and technology are my passion. I am a self-motivated person who strives to learn daily.</p>
+                    <p class="about__information-description">Please reach out to me if you or someone you know have any opportunities for a software engineering student!</p>
+                    <a href="mailto:mzark075@uottawa.ca" class="btntwo btn--text btn-green">Contact Me</a>
+                </div>
+                <div class="about__images">
+                    <img src="./assets/images/graduation.JPG" alt="" class="about__images-image about__images-image--top">
+                    <img src="./assets/images/geco.JPG" alt="" class="about__images-image about__images-image--bottom">
+                </div>
+            </div>
+        </section>
+
+        <!--! === PORTFOLIO/Projects === -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__container container">
+                <div class="portfolio__metadata section-metadata">
+                    <h2 class="title">Projects</h2>
+                </div>
+                <div class="swiper myswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="http://emeralddream.ca/" target="_blank"><img src="./assets/images/emerald_dream.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://htmlpreview.github.io/?https://github.com/MartinZarkov/Sorting_Visualizer/blob/main/index.html" target="_blank"><img src="./assets/images/sorting_visualizer.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://github.com/MartinZarkov/Chat_App" target="_blank"><img src="./assets/images/chat_app.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://github.com/MartinZarkov/chess-game" target="_blank"><img src="./assets/images/chess_game.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="http://martinzarkov.com/" target="_blank"><img src="./assets//images/sudoku.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--! === RESUME === -->
+        <section class="resume" id="resume">
+            <div class="resume__container container">
+                <div class="resume__group">
+                    <h2 class="footer__title title title--main">Looking for a software engineer?</h2>
+                    <h2 class="title" style="text-align:center">Resume</h2>
+
+                    <div class="resume__box">
+
+                        <div class="resume__body">
+                            <div class="left_Side">
+
+                                <!--Profile Photo-->
+                
+                                <div class="profileText">
+                                    <div class="imgBox">
+                                        <img src="./assets/images/resume_photo.jpg">
+                                    </div>
+                
+                                    <h2>Martin Zarkov</h2>
+                                </div>
+                
+                                <!--Contact Info Section-->
+                
+                                <div class="contactInfo">
+                
+                                    <h3 class="resume__title">Contact info</h3>
+                
+                                    <ul>
+                                        <li>
+                                            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                            <a href="mailto:mzark075@uottawa.ca" target="_blank">mzark075@uottawa.ca</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                            <a href="http://martinzarkov.com/" target="_blank">www.martinzarkov.com</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                                            <a href="https://www.linkedin.com/in/martin-zarkov/" target="_blank">/in/martin-zarkov/</a>
+                                        </li>
+                                        <li>
+                                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                                            <a href="https://github.com/MartinZarkov" target="_blank">github.com/martinzarkov</a>
+                                        </li>
+                                    </ul>
+                
+                                </div>
+                
+                                <!--Languages Section-->
+                
+                                <div class="language">
+                
+                                    <h3 class="resume__title">Languages</h3>
+                
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text">Python</li>
+                                            <li class="text">JavaScript</li>
+                                            <li class="text">Java</li>
+                                        </ul>
+                                    </div>
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text">HTML/CSS</li>
+                                            <li class="text">TypeScript</li>
+                                            <li class="text">C/C++</li>
+                                        </ul>
+                                    </div>
+                
+                                </div>
+                
+                                <!--Tecnologies Section-->
+                
+                                <div class="technologies">
+                
+                                    <h3 class="resume__title">Technologies</h3>
+                
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text">React</li>
+                                            <li class="text">Next.js</li>
+                                            <li class="text">NodeJS</li>
+                                            <li class="text">Tailwind</li>
+                                            <li class="text">Sass</li>
+                                            <li class="text">Firebase</li>
+                                            <li class="text">Flask</li>
+                                            <li class="text">Azure</li>
+                                        </ul>
+                                    </div>
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text">AWS</li>
+                                            <li class="text">GCP</li>
+                                            <li class="text">Git</li>
+                                            <li class="text">Docker</li>
+                                            <li class="text">Jira</li>
+                                            <li class="text">Tensorflow</li>
+                                            <li class="text">Unreal Engine</li>
+                                            <li class="text">Unity</li>
+                                        </ul>
+                                    </div>
+                
+                                </div>
+                
+                                <!--Soft-Skills Section-->
+                
+                                <div class="soft-skills">
+                
+                                    <h3 class="resume__title">Soft Skills</h3>
+                
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text">Communication</li>
+                                            <li class="text">Teamwork</li>
+                                            <li class="text">User-centered</li>
+                                        </ul>
+                                    </div>
+                                    <div class="float-container">
+                                        <ul>
+                                            <li class="text" style="text-align: center;">Agile</li>
+                                            <li class="text">Accountability</li>
+                                            <li class="text">Inventive</li>
+                                        </ul>
+                                    </div>
+                
+                                </div>
+                
+                                <!--Education Section-->
+                
+                                <div class="education">
+                
+                                    <h3 class="resume__title">Education</h3>
+                
+                                    <ul>
+                                        <li>
+                                            <h4>University of Ottawa</h4>
+                                            <h5>Software Engineering</h5>
+                                            <h6>2021 - Ongoing</h6>
+                                        </li>
+                                    </ul>
+                
+                                </div>
+                
+                                <!--Certificates Section-->
+                
+                                <div class="contactInfo">
+                
+                                    <h3 class="resume__title">Certificates</h3>
+                
+                                    <ul>
+                                        <li>
+                                            <a href="./assets/images/Violence_Prevention.pdf" target="_blank" style="font-size: large;">Violence Prevention</a>
+                                            <h5>University of Ottawa</h5>
+                                        </li>
+                                        <li>
+                                            <a href="./assets/images/Respect_Workplace.png" target="_blank" style="font-size: large;">Respect in the Workplace</a>
+                                            <h5>University of Ottawa</h5>
+                                        </li>
+                                        <li>
+                                            <a href="./assets/images/Accessibility.png" target="_blank" style="font-size: large;">Accessibility</a>
+                                            <h5>University of Ottawa</h5>
+                                        </li>
+                                    </ul>
+                
+                                </div>
+                
+                            </div>
+
+                            <!--Beginning of Right Section-->
+
+                            <div class="right_Side">
+
+                                <div class="right__about">
+                
+                                    <h2 class="title2">Work Experience</h2>
+                
+                                    <div style="text-decoration: none;">
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a href="http://emeralddream.ca/" class="experience-hover" target="_blank"><h3>Emerald Dream Inc.</h3></a>
+                                                </div>
+                                                <h4>(Web Dev Intern)</h4>
+                                            </div>
+                                            <span class="right-header">May - Aug 2022</span>
+                                        </div>
+                                        <div class="experience-body">
+                                            <ul>
+                                                <li>- Redesigned an <b>HTML, CSS</b> and <b>JavaScript</b> website to modern standards by implementing mobile and tablet support including hamburger menu using a combination of <b>Grid</b> and <b>Flex</b>.</li>
+                                                <li>- Increased interactivity by adding image animations and social media icons using <b>Scroll Reveal</b> and <b>Remix Icons</b>.</li>
+                                                <li>- Improved website visibility  by <b>27%</b> and website traffic by <b>51%</b> with the addition of <b>SEO</b> elements such as <b>meta tags</b>, <b>heading tags</b>.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <h2 class="title2">Personal Projects</h2>
+
+                                    <div>
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a href="https://github.com/MartinZarkov/Chat_App" class="experience-hover" target="_blank"><h3>Chat App</h3></a>
+                                                </div>
+                                            </div>
+                                            <span class="right-header">Nov - Dec 2022</span>
+                                        </div>
+                                        <div class="experience-body">
+                                            <ul>
+                                                <li>- Built a <b>React</b>, <b>Tailwind</b> and Google's <b>Firebase</b> chat application to exchange messages between Google authenticated users.</li>
+                                                <li>- Implemented Google's <b>Firestore</b> as the backend database to write and read messages.</li>
+                                                <li>- Utilized Google's <b>Auth</b> to authenticate and sign in emails.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a href="https://htmlpreview.github.io/?https://github.com/MartinZarkov/Sorting_Visualizer/blob/main/index.html" class="experience-hover" target="_blank"><h3>Sorting Visualizer</h3></a>
+                                                </div>
+                                            </div>
+                                            <span class="right-header">Mar - Apr 2022</span>
+                                        </div>
+                                        <div class="experience-body">
+                                            <ul>
+                                                <li>- Built <b>HTML, CSS</b> and <b>JavaScript</b> visualization for <b>sorting algorithms</b>.</li>
+                                                <li>- Implemented <b>Merge Sort</b>, <b>Quick Sort</b>, <b>Heap Sort</b>, <b>Bubble Sort</b>, <b>Insertion Sort</b>, and <b>Selection Sort</b>.</li>
+                                                <li>- Added colored representation, controls for visualization(speed, arrray size, new array generation).</b></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a href="https://github.com/MartinZarkov/chess-game" class="experience-hover" target="_blank"><h3>Chess Game</h3></a>
+                                                </div>
+                                                
+                                            </div>
+                                            <span class="right-header"> Jan - Feb 2022</span>
+                                        </div>
+                                        <div class="experience-body">
+                                            <ul>
+                                                <li>- Built a <b>React</b> chess game using open source libraries</li>
+                                                <li>- Implemented <b>Chessboard.jsx</b> library to render drag and drop game board components on standard and touch devices.</li>
+                                                <li>- Utilized <b>Chess.js</b> library for move generation/validation, piece placement/movement and check/checkmate detection.</li>
+                                                <li>- Added a random opponent movement to act as a simple AI.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a href="https://htmlpreview.github.io/?https://github.com/MartinZarkov/Sudoku_solver/blob/main/index.html" class="experience-hover" target="_blank"><h3>Sudoku Solver</h3></a>
+                                                </div>
+                                            </div>
+                                            <span class="right-header">Nov - Dec 2021</span>
+                                        </div>
+                                        <div class="experience-body">
+                                            <ul>
+                                                <br>
+                                                <li>- Built <b>HTML, CSS</b> and <b>JavaScript</b> visualization for sudoku solving.</li>
+                                                <li>- Used bitwise operators to check if rows, columns and areas have numbers.</li>
+                                                <li>- Implemented a backtracking algorithm to solve the sudoku problem.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!--<h2 class="title2">Extracurricular Activities</h2>
+                
+                                    <div>
+                                        <div class="experience-header">
+                                            <div class="left-header">
+                                                <div class="employer">
+                                                    <a class="experience-hover"><h3>Amazon Web Services(AWS)</h3></a>
+                                                </div>
+                                                
+                                            </div>
+                                            <span class="right-header">May - Aug 2021</span>
+                                        </div>
+
+                                        <div class="experience-body">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align:center">
+                        <a href="mailto:mzark075@uottawa.ca" class="btntwo btn--text btn-green">Contact Me</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--! === FOOTER === -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__group">
+                <a href="./index.html" class="footer__logo">
+                    <img src="#" alt="">
+                </a>
+                <p class="footer__description">It’s not faith in technology. It’s faith in people.</p>
+                <p class="footer__description">-Steve Jobs, Co-founder of Apple.</p>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="https://github.com/MartinZarkov" class="footer__list-link" target="_blank">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="https://www.linkedin.com/in/martin-zarkov/" target="_blank" class="footer__list-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="footer_copyright">&copy; Martin Zarkov 2022. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SWIPERJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
